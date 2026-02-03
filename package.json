@@ -1,0 +1,60 @@
+{
+  "name": "social-media-scraper",
+  "version": "1.0.0",
+  "description": "Download videos from Instagram and Facebook with complete metadata extraction",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test:watch": "npm run test -- --watch",
+    "prepublishOnly": "npm run build",
+    "lint": "eslint src/**/*.ts",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "example": "node examples/basic.js"
+  },
+  "keywords": [
+    "instagram",
+    "facebook",
+    "scraper",
+    "video",
+    "downloader",
+    "social-media",
+    "metadata",
+    "reel",
+    "story"
+  ],
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/social-media-scraper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/social-media-scraper/issues"
+  },
+  "homepage": "https://github.com/yourusername/social-media-scraper#readme",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.6.5",
+    "cheerio": "^1.0.0-rc.12"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@typescript-eslint/eslint-plugin": "^6.19.0",
+    "@typescript-eslint/parser": "^6.19.0",
+    "eslint": "^8.56.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.2.4",
+    "typescript": "^5.3.3"
+  }
+}
